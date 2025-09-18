@@ -19,25 +19,38 @@ section {
 /* 第一屏 intro 左对齐 */
 .intro {
   text-align: left;
-  background-image: url(images/cover-w-pt_画板\ 1_画板\ 1.jpg);
+  background-image: url(images/cover-w-pt.jpg);
   background-size: 100% 100%;
 
 }
  .intro h1{
   font-size: 20px;
   margin-bottom: 20px;
+  font-weight: 200;
  }
 
 .intro h2,
 .intro img,
 .intro p {
   margin-bottom: 20px; /* 所有段落之间均匀空20px */
+}
 
+.name{
+  font-weight: bold;
+
+}
+
+.selfintro{
+  background-color: white;
+  font-size: 20px;
+  color:#1e1e1e;
+  line-height: 10px;
 }
 
 .black-link {
   color: black;
-  font-weight: bold;
+ 
+  background-color: none;
 }
 
 .white-link  {
@@ -47,13 +60,45 @@ section {
 
 /* 第二屏 details  */
 .details {
-  text-align: left;
-  background-color: #dbd1c3;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 100px 50px;  /* space inside the section */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.details h4,
-.details ol,
-.details ul {
-  margin-bottom: 20px;
-    margin:20px;
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  gap: 40px;                             /* spacing between works */
+  width: 100%;
+  max-width: 1200px;                     /* prevent it from stretching too wide */
 }
+
+.work {
+  text-align: center;
+  background-color: #f8f8f8;  /* optional light background for each item */
+  padding: 20px;
+  border-radius: 10px;        /* rounded corners */
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.caption {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+}
+
