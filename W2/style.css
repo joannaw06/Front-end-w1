@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "San Francisco","Helvetica", sans-serif;
+
+  line-height: 2;
+}
+
+section {
+  min-height: 100vh;   /* 一屏的高度, 100%的viewport height */
+  padding: 250px 50px; /* height留100px，width留50px */
+
+}
+
+/* 第一屏 intro 左对齐 */
+.intro {
+  text-align: left;
+  background-image: url(images/cover-w-pt_画板\ 1_画板\ 1.jpg);
+  background-size: 100% 100%;
+
+}
+ .intro h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+ }
+
+.intro h2,
+.intro img,
+.intro p {
+  margin-bottom: 20px; /* 所有段落之间均匀空20px */
+
+}
+
+.black-link {
+  color: black;
+  font-weight: bold;
+}
+
+.white-link  {
+  color: white;
+  font-weight: bold;
+}
+
+/* 第二屏 details  */
+.details {
+  text-align: left;
+  background-color: #dbd1c3;
+}
+
+.details h4,
+.details ol,
+.details ul {
+  margin-bottom: 20px;
+    margin:20px;
+}
