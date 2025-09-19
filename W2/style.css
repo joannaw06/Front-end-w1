@@ -61,7 +61,7 @@ section {
 /* 第二屏 details  */
 .details {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #d8cfc2;
   padding: 100px 50px;  /* space inside the section */
   min-height: 100vh;
   display: flex;
@@ -71,34 +71,32 @@ section {
 
 .works-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, auto);  /* 2 rows */
-  gap: 40px;                             /* spacing between works */
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  grid-template-rows: repeat(2, auto);  /* 2行 */
+  gap: 80px;                             /* spacing between works */
   width: 100%;
-  max-width: 1200px;                     /* prevent it from stretching too wide */
 }
 
 .work {
   text-align: center;
-  background-color: #f8f8f8;  /* optional light background for each item */
-  padding: 20px;
-  border-radius: 10px;        /* rounded corners */
 }
 
 .work img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 .caption {
   font-weight: bold;
+  font-size: 18px;
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .description {
   font-size: 16px;
   color: #333;
+  text-align: left;
+
 }
 
