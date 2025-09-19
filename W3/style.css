@@ -1,25 +1,21 @@
-/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body & fonts */
 body {
-  font-family: "San Francisco", "Helvetica", sans-serif;
-  line-height: 2;
-  position: relative; /* ensures absolute nav is relative to body */
+  font-family: "San Francisco","Helvetica", sans-serif;
+  line-height: 2;  
 }
 
-/* ===== Floating top-right nav ===== */
 .top-nav {
-  position: fixed;        /* keeps nav visible while scrolling */
+  position: fixed;       /* floating over page */
   top: 20px;
   right: 20px;
   display: flex;
   gap: 2rem;
-  z-index: 1000;          /* on top of all content */
+  z-index: 1000;         /* stay on top */
   background: none;
 }
 
@@ -53,12 +49,112 @@ body {
   background-color: #000;
 }
 
-/* Projects grid */
-.projects-container {
+section {
+  min-height: 100vh;   /* 一屏的高度, 100%的viewport height */
+  padding: 250px 50px; /* height留100px，width留50px */
+
+}
+
+/* 第一屏 intro 左对齐 */
+.intro {
+  text-align: left;
+  background-image: url(images/cover-w-pt.jpg);
+  background-size: 100% 100%;
+
+}
+ .intro h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 200;
+ }
+
+.intro h2,
+.intro img,
+.intro p {
+  margin-bottom: 20px; /* 所有段落之间均匀空20px */
+}
+
+.name{
+  font-weight: bold;
+
+}
+
+.selfintro{
+  background-color: white;
+  font-size: 20px;
+  color:#1e1e1e;
+  line-height: 10px;
+}
+
+.black-link {
+  color: black;
+ 
+  background-color: none;
+}
+
+.white-link  {
+  color: white;
+  font-weight: bold;
+}
+
+/* 第二屏 details  */
+.details {
+  text-align: center;
+  background-color: #d8cfc2;
+  padding: 100px 50px;  /* space inside the section */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  grid-template-rows: repeat(2, auto);  /* 2行 */
+  gap: 80px;                             /* spacing between works */
+  width: 100%;
+}
+
+.work {
+  text-align: center;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+
+}
+
+/* ================= Projects / Works ================= */
+.details {
+  text-align: center;
+  background-color: #d8cfc2;
+  padding: 100px 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 5rem 2rem 2rem; /* top padding leaves space for nav */
+  width: 100%;
 }
 
 .work {
@@ -70,13 +166,29 @@ body {
 
 .work img {
   width: 100%;
+  height: auto;
   border-radius: 6px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #f4f4f4;
-  margin-top: 2rem;
+.caption {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
 }
+
+.description {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+/* ================= Projects Page Container ================= */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 5rem 2rem 2rem;  /* top padding leaves space for nav */
+}
+
+
