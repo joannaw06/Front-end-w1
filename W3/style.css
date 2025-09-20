@@ -6,8 +6,56 @@
 
 body {
   font-family: "San Francisco","Helvetica", sans-serif;
-  line-height: 2;  
-  padding-top: 80px; 
+
+  line-height: 2;
+}
+
+section {
+  min-height: 100vh;   /* 一屏的高度, 100%的viewport height */
+  padding: 250px 50px; /* height留100px，width留50px */
+
+}
+
+/* 第一屏 intro 左对齐 */
+.intro {
+  text-align: left;
+  background-image: url(images/cover-w-pt.jpg);
+  background-size: 100% 100%;
+
+}
+ .intro h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 200;
+ }
+
+.intro h2,
+.intro img,
+.intro p {
+  margin-bottom: 20px; /* 所有段落之间均匀空20px */
+}
+
+.name{
+  font-weight: bold;
+
+}
+
+.selfintro{
+  background-color: white;
+  font-size: 20px;
+  color:#1e1e1e;
+  line-height: 10px;
+}
+
+.black-link {
+  color: black;
+ 
+  background-color: none;
+}
+
+.white-link  {
+  color: white;
+  font-weight: bold;
 }
 
 /* Header navigation container */
