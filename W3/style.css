@@ -10,11 +10,6 @@ body {
   line-height: 2;
 }
 
-section {
-  min-height: 100vh;   /* 一屏的高度, 100%的viewport height */
-  padding: 250px 50px; /* height留100px，width留50px */
-
-}
 
 /* 第一屏 intro 左对齐 */
 .intro {
@@ -109,7 +104,7 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  padding: 5rem 2rem 2rem;
+  padding: 2rem 2rem 2rem;
 }
 
 .work {
@@ -118,13 +113,12 @@ section {
   text-align: center;
   background: #f5f5f5;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .work img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
   transition: transform 0.3s ease;
 }
 
