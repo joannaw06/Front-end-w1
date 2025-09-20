@@ -22,7 +22,7 @@ body {
   text-decoration: none;    /* remove default underline */
   color: #000;
   font-weight: bold;
-  margin-left: 2rem;        /* space between links */
+  margin-left: 4rem;        /* space between links */
   position: relative;       /* needed for underline effect */
   padding-bottom: 2px;      /* small padding for underline */
 }
@@ -191,5 +191,32 @@ section {
   gap: 2rem;
   padding: 5rem 2rem 2rem;  /* top padding leaves space for nav */
 }
+
+/* Make the whole card clickable and preserve your existing .work styling */
+.work {
+  /* keep your existing styles — this just ensures layout doesn't break */
+  text-align: center;
+}
+
+/* Anchor that wraps the card */
+.work1-link
+.work2-link
+.work3-link
+.work4-link
+ {
+  display: block;          /* anchor becomes a block-level card */
+  text-decoration: none;   /* remove link underline */
+  color: inherit;          /* keep text color from .work */
+}
+
+/* Keep images responsive inside anchors */
+.work-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;      /* optional, keeps same look */
+}
+
+
 
 
