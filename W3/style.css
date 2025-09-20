@@ -54,12 +54,12 @@ body {
   background-color: #000;
 }
 
-/* Intro / Details sections only */
-section.intro,
-section.details {
-  min-height: 100vh;
-  padding: 250px 50px;
+
+section.intro {
+  min-height: 100vh; /* optional */
+  padding: 150px 50px; /* less top padding */
 }
+
 
 /* Intro styling */
 .intro {
@@ -114,7 +114,7 @@ section.details {
   max-width: 400px;
   text-align: center;
   background: #f5f5f5;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
